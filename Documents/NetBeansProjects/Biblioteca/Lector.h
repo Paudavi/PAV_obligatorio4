@@ -7,6 +7,8 @@
 #include <string>
 #include <set>
 
+
+
 class Lector : public Usuario {
 private:
     DtFecha* fechaRegistro;
