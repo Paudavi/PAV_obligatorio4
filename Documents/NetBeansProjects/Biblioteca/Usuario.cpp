@@ -11,9 +11,9 @@ Usuario::Usuario(std::string i, std::string n, std::string p) {
     this->password = p;
 }
 Usuario::Usuario(Usuario& u){
-    this->identificador = u->identificador;
-    this->nombre = u->nombre;
-    this->password = u->password;
+    this->identificador = u.identificador;
+    this->nombre = u.nombre;
+    this->password = u.password;
 }
 
 //Getters

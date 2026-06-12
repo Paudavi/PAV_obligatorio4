@@ -1,11 +1,13 @@
 build/Debug/Cygwin-Windows/CtrlUsuario.o: CtrlUsuario.cpp CtrlUsuario.h \
- ICtrlUsuario.h ManejadorUsuario.h Usuario.h DtFecha.h DtFuncionario.h \
- DtUsuario.h DtLector.h
+ ICtrlUsuario.h DtLector.h DtUsuario.h DtFecha.h DtFuncionario.h \
+ ManejadorUsuario.h Usuario.h Lector.h Funcionario.h
 CtrlUsuario.h:
 ICtrlUsuario.h:
-ManejadorUsuario.h:
-Usuario.h:
+DtLector.h:
+DtUsuario.h:
 DtFecha.h:
 DtFuncionario.h:
-DtUsuario.h:
-DtLector.h:
+ManejadorUsuario.h:
+Usuario.h:
+Lector.h:
+Funcionario.h:

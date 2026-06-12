@@ -14,7 +14,7 @@ public:
     //Constructores
     DtUsuario();
     DtUsuario(std::string i, std::string n, std::string p);
-    DtUsuario(Usuario& DtU);
+    DtUsuario(DtUsuario& DtU);
     
     //Getters
     std::string getIdentificador();

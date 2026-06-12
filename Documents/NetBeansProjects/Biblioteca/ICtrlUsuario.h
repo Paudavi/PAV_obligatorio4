@@ -1,9 +1,11 @@
 
 #ifndef ICTRLUSUARIO_H
 #define ICTRLUSUARIO_H
+#include "DtLector.h"
+#include "DtFuncionario.h"
 
 class ICtrlUsuario {
-private:
+public:
     virtual DtLector* ingresarDatosLector(std::string id, std::string nombre,
     std::string pass, DtFecha* fecha) = 0;
     
@@ -12,7 +14,7 @@ private:
     virtual void cancelarRegistroLector() = 0;
     
     virtual DtFuncionario* registrarFuncionarioNuevo(std::string id, std::string nombre, 
-    std::string pass, std::string nroEmpleado) = 0;
+    std::string pass, int nroEmpleado) = 0;
     
     virtual void confirmarRegistro() = 0;
     

@@ -5,6 +5,7 @@
 #include <string>
 #include "ICtrlSesion.h"
 #include "Sesion.h"
+#include "ManejadorUsuario.h"
 
 class CtrlSesion : public ICtrlSesion {
 private:

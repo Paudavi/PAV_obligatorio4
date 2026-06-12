@@ -15,6 +15,7 @@
                      projectFiles="true">
         <itemPath>CtrlSesion.h</itemPath>
         <itemPath>CtrlUsuario.h</itemPath>
+        <itemPath>Fabrica.h</itemPath>
         <itemPath>ICtrlSesion.h</itemPath>
         <itemPath>ICtrlUsuario.h</itemPath>
         <itemPath>ManejadorUsuario.h</itemPath>
@@ -42,6 +43,7 @@
       <logicalFolder name="f3" displayName="Controladores" projectFiles="true">
         <itemPath>CtrlSesion.cpp</itemPath>
         <itemPath>CtrlUsuario.cpp</itemPath>
+        <itemPath>Fabrica.cpp</itemPath>
         <itemPath>ManejadorUsuario.cpp</itemPath>
       </logicalFolder>
       <logicalFolder name="f2" displayName="Data Types" projectFiles="true">
@@ -97,6 +99,10 @@
       <item path="DtUsuario.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="DtUsuario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Fabrica.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Fabrica.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Funcionario.cpp" ex="false" tool="1" flavor2="0">
       </item>
@@ -168,6 +174,10 @@
       <item path="DtUsuario.cpp" ex="false" tool="1" flavor2="0">
       </item>
       <item path="DtUsuario.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="Fabrica.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="Fabrica.h" ex="false" tool="3" flavor2="0">
       </item>
       <item path="Funcionario.cpp" ex="false" tool="1" flavor2="0">
       </item>

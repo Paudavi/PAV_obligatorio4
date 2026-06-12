@@ -4,6 +4,7 @@
 
 #include "Usuario.h"
 #include "DtFecha.h"
+#include "DtLector.h"
 #include <string>
 #include <set>
 
@@ -12,7 +13,7 @@
 class Lector : public Usuario {
 private:
     DtFecha* fechaRegistro;
-    std::set<Prestamo*> Prestamos;
+    //std::set<Prestamo*> Prestamos;
     
 public:
     //Construcores
@@ -28,7 +29,7 @@ public:
     
     //Procedimientos
     DtLector* getDatosLector();
-    std::set<Prestamo*> obtenerPrestamos();
+    //std::set<Prestamo*> obtenerPrestamos();
     
     
 };

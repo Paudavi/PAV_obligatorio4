@@ -41,6 +41,7 @@ OBJECTFILES= \
 	${OBJECTDIR}/DtFuncionario.o \
 	${OBJECTDIR}/DtLector.o \
 	${OBJECTDIR}/DtUsuario.o \
+	${OBJECTDIR}/Fabrica.o \
 	${OBJECTDIR}/Funcionario.o \
 	${OBJECTDIR}/Lector.o \
 	${OBJECTDIR}/ManejadorUsuario.o \
@@ -102,6 +103,11 @@ ${OBJECTDIR}/DtUsuario.o: DtUsuario.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DtUsuario.o DtUsuario.cpp
+
+${OBJECTDIR}/Fabrica.o: Fabrica.cpp
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Fabrica.o Fabrica.cpp
 
 ${OBJECTDIR}/Funcionario.o: Funcionario.cpp
 	${MKDIR} -p ${OBJECTDIR}

@@ -1,18 +1,83 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/cppFiles/main.cc to edit this template
- */
-
-/* 
- * File:   main.cpp
- * Author: Ivan Pereira
- *
- * Created on 9 de junio de 2026, 16:57
- */
-
 #include <iostream>
 #include <set>
+#include "ICtrlSesion.h"
+#include "ICtrlUsuario.h"
+#include "CtrlSesion.h"
+#include "CtrlUsuario.h"
+#include "ManejadorUsuario.h"
+#include "DtFuncionario.h"
+#include "Fabrica.h"
 
 int main() {
+    Fabrica* f = Fabrica::getInstancia();
+    ICtrlUsuario* icUsuario = f->getICtrlUsuario();
+    ICtrlSesion* icSesion = f->getICtrlSesion();
+    
+    DtFuncionario* DtRoot = icUsuario->registrarFuncionarioNuevo("root","root","root",0);
+    icUsuario->confirmarRegistro();
+    
+    std::cout << "1 - Iniciar Sesion\n" ;
+    std::cout << "2 - Salir\n" ;
+    std::cout << "Opcion: " ;
+    int num = 0;
+    std::cin >> num;
+    std::cout << "\n \n" ;
+    
+    switch (num) {
+        case 1:{
+            std::string id;
+            std::string pass;
+            std::cout << "ID: " ;
+            std::cin >> id;
+            std::cout << "\n" ;
+            
+            std::cout << "PASSWORD: " ;
+            std::cin >> pass;
+            std::cout << "\n" ;
+            
+            bool ingresarDatos = icSesion->ingresarDatos(id,pass);
+            bool cancela = false;
+            
+            if (ingresarDatos == true) {
+                icSesion->iniciarSesion();
+            } else { 
+                while (!ingresarDatos && !cancela) {
+                    int opcion;
+                    std::cout << "Las credenciales no son correctas.\n\n" ;
+                    std::cout << "1 - Intentar nuevamente\n" ;
+                    std::cout << "2 - Salir\n" ;
+                    std::cout << "Opcion: " ;
+                    std::cin >> opcion;
+                    std::cout << "\n" ;
+                    if (opcion == 1) {
+                        std::cout << "ID: " ;
+                        std::cin >> id;
+                        std::cout << "PASSWORD: " ;
+                        std::cin >> pass;
+                        std::cout << "\n" ;
+                        
+                        ingresarDatos = icSesion->ingresarDatos(id,pass);
+                        if (ingresarDatos == true) {
+                            icSesion->iniciarSesion();
+                        }
+                    } else {
+                        cancela = true;
+                    }
+                }
+            }
+            break;
+        }
+        case 2:{
+            break;
+         }
+}    
+    
+    
+    
+    
+    
+    
+    
+    
 }
 

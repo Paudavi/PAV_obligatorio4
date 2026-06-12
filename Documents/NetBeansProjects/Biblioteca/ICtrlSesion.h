@@ -5,7 +5,7 @@
 #include <string>
 
 class ICtrlSesion {
-private:
+public:
     virtual bool ingresarDatos(std::string id, std::string pass) = 0;
     
     virtual void iniciarSesion() = 0;

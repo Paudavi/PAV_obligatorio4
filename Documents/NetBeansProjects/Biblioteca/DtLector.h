@@ -9,7 +9,7 @@
 class DtLector : public DtUsuario {
 private:
     DtFecha* fechaRegistro;
-    set<DtPrestamo*> DtPrestamos;
+    //set<DtPrestamo*> DtPrestamos;
     
 public:
     //Construcores
@@ -22,7 +22,7 @@ public:
     
     //Procedimientos
     DtLector* getDatosLector();
-    set<DtPrestamo*> obtenerDtPrestamos();
+    //set<DtPrestamo*> obtenerDtPrestamos();
     
     
 };

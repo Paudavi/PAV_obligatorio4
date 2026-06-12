@@ -10,9 +10,9 @@ DtUsuario::DtUsuario(std::string i, std::string n, std::string p) {
     this->password = p;
 }
 DtUsuario::DtUsuario(DtUsuario& DtU){
-    this->identificador = DtU->identificador;
-    this->nombre = DtU->nombre;
-    this->password = DtU->password;
+    this->identificador = DtU.identificador;
+    this->nombre = DtU.nombre;
+    this->password = DtU.password;
 }
 
 //Getters

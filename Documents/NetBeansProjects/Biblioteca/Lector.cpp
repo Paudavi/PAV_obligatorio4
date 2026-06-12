@@ -13,8 +13,8 @@ Lector::Lector(std::string i, std::string n, std::string p,
 }
 
 Lector::Lector(Lector& l) : Usuario(l) {
-    this->Prestamos = l.Prestamos;
-    this->fechaRegistro = l->fechaRegistro;
+    //this->Prestamos = l.Prestamos;
+    this->fechaRegistro = l.fechaRegistro;
 }
 
 //Getters
@@ -33,7 +33,7 @@ DtLector* Lector::getDatosLector(){
             this->getPassword(), this->fechaRegistro);
     return DtL;
 }
-std::set<Prestamo*> Lector::obtenerPrestamos(){
-    return this->Prestamos;
-}
+//std::set<Prestamo*> Lector::obtenerPrestamos(){
+   // return this->Prestamos;
+//}
 
