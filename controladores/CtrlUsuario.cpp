@@ -1,11 +1,11 @@
 #include "CtrlUsuario.h"
 #include "ICtrlUsuario.h"
-#include "ManejadorUsuario.h"
-#include "DtFecha.h"
-#include "DtFuncionario.h"
-#include "DtLector.h"
-#include "Lector.h"
-#include "Funcionario.h"
+#include "../manejadores/ManejadorUsuario.h"
+#include "../dt/DtFecha.h"
+#include "../dt/DtFuncionario.h"
+#include "../dt/DtLector.h"
+#include "../dominio/Lector.h"
+#include "../dominio/Funcionario.h"
 #include <string>
 
 CtrlUsuario* CtrlUsuario::instancia = nullptr;

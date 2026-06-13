@@ -1,7 +1,7 @@
 #include "CtrlSesion.h"
-#include "ManejadorUsuario.h"
-#include "DtUsuario.h"
-#include "Sesion.h"
+#include "../manejadores/ManejadorUsuario.h"
+#include "../dt/DtUsuario.h"
+#include "../dominio/Sesion.h"
 #include <set>
 
 CtrlSesion* CtrlSesion::instancia = nullptr;

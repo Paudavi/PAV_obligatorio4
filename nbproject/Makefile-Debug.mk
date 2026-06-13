@@ -74,65 +74,65 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/biblioteca.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.cc} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/biblioteca ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/CtrlSesion.o: CtrlSesion.cpp
+${OBJECTDIR}/CtrlSesion.o: controladores/CtrlSesion.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CtrlSesion.o CtrlSesion.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CtrlSesion.o controladores/CtrlSesion.cpp
 
-${OBJECTDIR}/CtrlUsuario.o: CtrlUsuario.cpp
+${OBJECTDIR}/CtrlUsuario.o: controladores/CtrlUsuario.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CtrlUsuario.o CtrlUsuario.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/CtrlUsuario.o controladores/CtrlUsuario.cpp
 
-${OBJECTDIR}/DtFecha.o: DtFecha.cpp
+${OBJECTDIR}/DtFecha.o: dt/DtFecha.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DtFecha.o DtFecha.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DtFecha.o dt/DtFecha.cpp
 
-${OBJECTDIR}/DtFuncionario.o: DtFuncionario.cpp
+${OBJECTDIR}/DtFuncionario.o: dt/DtFuncionario.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DtFuncionario.o DtFuncionario.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DtFuncionario.o dt/DtFuncionario.cpp
 
-${OBJECTDIR}/DtLector.o: DtLector.cpp
+${OBJECTDIR}/DtLector.o: dt/DtLector.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DtLector.o DtLector.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DtLector.o dt/DtLector.cpp
 
-${OBJECTDIR}/DtUsuario.o: DtUsuario.cpp
+${OBJECTDIR}/DtUsuario.o: dt/DtUsuario.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DtUsuario.o DtUsuario.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/DtUsuario.o dt/DtUsuario.cpp
 
 ${OBJECTDIR}/Fabrica.o: Fabrica.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Fabrica.o Fabrica.cpp
 
-${OBJECTDIR}/Funcionario.o: Funcionario.cpp
+${OBJECTDIR}/Funcionario.o: dominio/Funcionario.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Funcionario.o Funcionario.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Funcionario.o dominio/Funcionario.cpp
 
-${OBJECTDIR}/Lector.o: Lector.cpp
+${OBJECTDIR}/Lector.o: dominio/Lector.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Lector.o Lector.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Lector.o dominio/Lector.cpp
 
-${OBJECTDIR}/ManejadorUsuario.o: ManejadorUsuario.cpp
+${OBJECTDIR}/ManejadorUsuario.o: manejadores/ManejadorUsuario.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ManejadorUsuario.o ManejadorUsuario.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/ManejadorUsuario.o manejadores/ManejadorUsuario.cpp
 
-${OBJECTDIR}/Sesion.o: Sesion.cpp
+${OBJECTDIR}/Sesion.o: dominio/Sesion.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Sesion.o Sesion.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Sesion.o dominio/Sesion.cpp
 
-${OBJECTDIR}/Usuario.o: Usuario.cpp
+${OBJECTDIR}/Usuario.o: dominio/Usuario.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Usuario.o Usuario.cpp
+	$(COMPILE.cc) -g -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Usuario.o dominio/Usuario.cpp
 
 ${OBJECTDIR}/main.o: main.cpp
 	${MKDIR} -p ${OBJECTDIR}

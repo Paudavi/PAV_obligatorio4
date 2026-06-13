@@ -4,8 +4,8 @@
 
 #include <string>
 #include "ICtrlSesion.h"
-#include "Sesion.h"
-#include "ManejadorUsuario.h"
+#include "../dominio/Sesion.h"
+#include "../manejadores/ManejadorUsuario.h"
 
 class CtrlSesion : public ICtrlSesion {
 private:

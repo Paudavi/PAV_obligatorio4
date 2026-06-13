@@ -5,7 +5,7 @@
 
 #include <set>
 #include <string>
-#include "Usuario.h"
+#include "../dominio/Usuario.h"
 
 class ManejadorUsuario {
 private:

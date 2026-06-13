@@ -1,6 +1,6 @@
 #include "Lector.h"
 #include "Usuario.h"
-#include "DtLector.h"
+#include "../dt/DtLector.h"
 #include <string>
 #include <set>
 

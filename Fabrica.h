@@ -1,8 +1,8 @@
 #ifndef FABRICA_H
 #define FABRICA_H
 
-#include "ICtrlSesion.h"
-#include "ICtrlUsuario.h"
+#include "controladores/ICtrlSesion.h"
+#include "controladores/ICtrlUsuario.h"
 
 class Fabrica {
 private:

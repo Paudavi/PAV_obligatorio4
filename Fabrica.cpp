@@ -1,7 +1,7 @@
 
 #include "Fabrica.h"
-#include "CtrlUsuario.h"
-#include "CtrlSesion.h"
+#include "controladores/CtrlUsuario.h"
+#include "controladores/CtrlSesion.h"
 
 
 Fabrica* Fabrica::instancia = nullptr;

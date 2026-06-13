@@ -3,10 +3,10 @@
 #define CTRLUSUARIO_H
 
 #include "ICtrlUsuario.h"
-#include "ManejadorUsuario.h"
-#include "DtFecha.h"
-#include "DtFuncionario.h"
-#include "DtLector.h"
+#include "../manejadores/ManejadorUsuario.h"
+#include "../dt/DtFecha.h"
+#include "../dt/DtFuncionario.h"
+#include "../dt/DtLector.h"
 #include <string>
 
 

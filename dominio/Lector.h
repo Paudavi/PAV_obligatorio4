@@ -3,8 +3,8 @@
 #define LECTOR_H
 
 #include "Usuario.h"
-#include "DtFecha.h"
-#include "DtLector.h"
+#include "../dt/DtFecha.h"
+#include "../dt/DtLector.h"
 #include <string>
 #include <set>
 

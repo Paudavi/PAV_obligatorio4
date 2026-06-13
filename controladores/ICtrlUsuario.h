@@ -1,8 +1,8 @@
 
 #ifndef ICTRLUSUARIO_H
 #define ICTRLUSUARIO_H
-#include "DtLector.h"
-#include "DtFuncionario.h"
+#include "../dt/DtLector.h"
+#include "../dt/DtFuncionario.h"
 
 class ICtrlUsuario {
 public:

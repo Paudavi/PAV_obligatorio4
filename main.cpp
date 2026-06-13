@@ -1,11 +1,11 @@
 #include <iostream>
 #include <set>
-#include "ICtrlSesion.h"
-#include "ICtrlUsuario.h"
-#include "CtrlSesion.h"
-#include "CtrlUsuario.h"
-#include "ManejadorUsuario.h"
-#include "DtFuncionario.h"
+#include "controladores/ICtrlSesion.h"
+#include "controladores/ICtrlUsuario.h"
+#include "controladores/CtrlSesion.h"
+#include "controladores/CtrlUsuario.h"
+#include "manejadores/ManejadorUsuario.h"
+#include "dt/DtFuncionario.h"
 #include "Fabrica.h"
 
 int main() {
