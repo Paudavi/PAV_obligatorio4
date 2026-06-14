@@ -2,7 +2,8 @@
 #include "Fabrica.h"
 #include "controladores/CtrlUsuario.h"
 #include "controladores/CtrlSesion.h"
-
+#include "controladores/CtrlMaterial.h"
+#include "controladores/CtrlPrestamo.h"
 
 Fabrica* Fabrica::instancia = nullptr;
 
@@ -21,4 +22,12 @@ ICtrlUsuario* Fabrica::getICtrlUsuario(){
 
 ICtrlSesion* Fabrica::getICtrlSesion(){
     return CtrlSesion::getInstancia();
+}
+
+ICtrlMaterial* Fabrica::getICtrlMaterial() {
+    return CtrlMaterial::getInstancia();
+}
+
+ICtrlPrestamo* Fabrica::getICtrlPrestamo() {
+    return CtrlPrestamo::getInstancia();
 }

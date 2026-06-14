@@ -3,6 +3,8 @@
 
 #include "controladores/ICtrlSesion.h"
 #include "controladores/ICtrlUsuario.h"
+#include "controladores/ICtrlMaterial.h"
+#include "controladores/ICtrlPrestamo.h"
 
 class Fabrica {
 private:
@@ -14,6 +16,9 @@ public:
     
     ICtrlUsuario* getICtrlUsuario();
     ICtrlSesion* getICtrlSesion();
+    ICtrlMaterial* getICtrlMaterial();
+    ICtrlPrestamo* getICtrlPrestamo();
+
 };
 
 #endif /* FABRICA_H */
