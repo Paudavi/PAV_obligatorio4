@@ -10,11 +10,13 @@ class Prestamo {
 private:
     DtFecha* fechaPrestamo;
     int cantDiasPrestamo;
+    std::string codigoMaterial;
 public:
-    Prestamo(DtFecha* fechaPrestamo, int cantDiasPrestamo);
+    Prestamo(DtFecha* fechaPrestamo, int cantDiasPrestamo, std::string codigoMaterial);
     ~Prestamo();
     DtFecha* getFechaPrestamo();
     int getCantDiasPrestamo();
+    std::string getCodigoMaterial();
     DtPrestamo getDatosPrestamo(DtLector* lector, DtMaterial* material);
 };
 #endif /* PRESTAMO_H */

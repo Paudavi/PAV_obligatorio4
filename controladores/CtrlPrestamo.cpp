@@ -57,8 +57,17 @@ DtPrestamo CtrlPrestamo::recodarDatosPrestamo(DtFecha* fechaPrestamo, int cantDi
 void CtrlPrestamo::confirmarPrestamo() {
     if (dtLectorRecordado != nullptr && dtMaterialRecordado != nullptr &&
         fechaPrestamoRecordada != nullptr && cantDiasPrestamoRecordada > 0) {
-        Prestamo* p = new Prestamo(fechaPrestamoRecordada, cantDiasPrestamoRecordada);
-        this->manejador->agregarPrestamo(p);
+
+        ManejadorUsuario* mU = ManejadorUsuario::getInstancia();
+        Usuario* u = mU->getUsuario(dtLectorRecordado->getIdentificador());
+        if (u != nullptr) {
+            Lector* l = dynamic_cast<Lector*>(u);
+            if (l != nullptr) {
+                Prestamo* p = l->crearPrestamo(fechaPrestamoRecordada, cantDiasPrestamoRecordada,
+                                               dtMaterialRecordado->getCodigo());
+                this->manejador->agregarPrestamo(p);
+            }
+        }
     }
     eliminarDatosPrestamo();
 }

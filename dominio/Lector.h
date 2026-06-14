@@ -30,6 +30,7 @@ public:
     //Procedimientos
     DtLector* getDatosLector();
     std::set<Prestamo*> obtenerPrestamos();
+    Prestamo* crearPrestamo(DtFecha* fecha, int cantDias, std::string codigoMaterial);
     
     
 };
